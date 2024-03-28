@@ -1,0 +1,15 @@
+.box {
+  position: relative;
+  transform: translateY(-11%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 75%;
+  .icon {
+    transform: scale(1.9);
+    position: absolute;
+    top: 10;
+    left: 45%;
+  }
+  h3 {
+    padding-top: 90px;
+  }
+}

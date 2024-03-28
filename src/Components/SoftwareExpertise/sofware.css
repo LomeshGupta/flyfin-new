@@ -1,0 +1,61 @@
+.soft {
+  display: flex;
+  justify-content: center;
+
+  h4 {
+    font-size: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .grid {
+    margin-top: 2%;
+  }
+  .ballcont {
+    width: 32%;
+  }
+}
+
+.ball {
+  /* margin-top: 20%; */
+  width: 70%;
+  height: 25vh;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  animation: bounce 1s infinite alternate;
+}
+
+.text {
+  color: #fff;
+  font-size: 20px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .soft {
+    display: block;
+    .grid {
+      width: 110%;
+      justify-content: center;
+      margin-top: 5%;
+    }
+    .ball{
+        width: 20vh;
+    }
+    .ballcont {
+      width: 50%;
+    }
+  }
+}
